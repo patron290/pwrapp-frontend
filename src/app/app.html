@@ -1,1 +1,21 @@
-<app-competitor-list></app-competitor-list>
+<header class="header">
+  <div class="container">
+    <h1>{{ title() }}</h1>
+    <nav class="nav">
+      <a routerLink="/">Home</a>
+      <a routerLink="/competitors">Competitors</a>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+    <router-outlet />
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 PWR App. All rights reserved.</p>
+  </div>
+</footer>
